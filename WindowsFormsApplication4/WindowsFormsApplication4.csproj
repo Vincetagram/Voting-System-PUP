@@ -119,6 +119,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>VotingSystemDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="VotingSystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VotingSystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VotingSystemDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VotingSystemDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VotingSystemDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VotingSystemDataSet4.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +197,39 @@
     </None>
     <None Include="VotingSystemDataSet1.xss">
       <DependentUpon>VotingSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="VotingSystemDataSet2.xsc">
+      <DependentUpon>VotingSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="VotingSystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VotingSystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VotingSystemDataSet2.xss">
+      <DependentUpon>VotingSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="VotingSystemDataSet3.xsc">
+      <DependentUpon>VotingSystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="VotingSystemDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VotingSystemDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VotingSystemDataSet3.xss">
+      <DependentUpon>VotingSystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="VotingSystemDataSet4.xsc">
+      <DependentUpon>VotingSystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="VotingSystemDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VotingSystemDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VotingSystemDataSet4.xss">
+      <DependentUpon>VotingSystemDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

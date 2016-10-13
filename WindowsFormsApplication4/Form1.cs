@@ -17,20 +17,18 @@ namespace WindowsFormsApplication4
         SqlConnection con = new SqlConnection();
         public Frm_Login()
         {
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=(LocalDB)\v11.0;AttachDbFilename=Voting-System-PUP\WindowsFormsApplication4\Database\VotingSystem.mdf;Integrated Security=True;";
+            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemConnectionString);
             InitializeComponent();
             
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection();
-             con.ConnectionString = "Data Source=(LocalDB)\v11.0;AttachDbFilename=Voting-System-PUP\WindowsFormsApplication4\Database\VotingSystem.mdf;Integrated Security=True;";
+            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemConnectionString);
             con.Open();
             string userid = tb_user.Text;
             string password = tb_pass.Text;
-            SqlCommand cmd = new SqlCommand("select uname,upass from voters where userid='" + tb_user.Text + "'and password='" + tb_pass.Text + "'", con);  
+            SqlCommand cmd = new SqlCommand("select uname,upass from voters where uname='" + tb_user.Text + "'and upass='" + tb_pass.Text + "'", con);  
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();  
             da.Fill(dt);
@@ -88,7 +86,7 @@ namespace WindowsFormsApplication4
 
         private void Frm_Login_Load(object sender, EventArgs e)
         {
-            con.ConnectionString = "Data Source=(LocalDB)\v11.0;AttachDbFilename=Voting-System-PUP\WindowsFormsApplication4\Database\VotingSystem.mdf;Integrated Security=True;";
+            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemConnectionString);
             con.Open();  
         }
     }
