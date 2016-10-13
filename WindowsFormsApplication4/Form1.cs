@@ -25,8 +25,27 @@ namespace WindowsFormsApplication4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Form2().Show();
-            this.Hide();
+            SqlConnection con = new SqlConnection();
+             con.ConnectionString = "Data Source=(LocalDB)\v11.0;AttachDbFilename=Voting-System-PUP\WindowsFormsApplication4\Database\VotingSystem.mdf;Integrated Security=True;";
+            con.Open();
+            string userid = tb_user.Text;
+            string password = tb_pass.Text;
+            SqlCommand cmd = new SqlCommand("select uname,upass from voters where userid='" + tb_user.Text + "'and password='" + tb_pass.Text + "'", con);  
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();  
+            da.Fill(dt);
+            if (dt.Rows.Count > 0)  
+            {  
+                new Form2().Show();
+                this.Hide();
+            }  
+            else  
+            {  
+                MessageBox.Show("Invalid Login please check username and password");  
+            }  
+            con.Close(); 
+            
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -65,6 +84,12 @@ namespace WindowsFormsApplication4
         private void tb_user_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Frm_Login_Load(object sender, EventArgs e)
+        {
+            con.ConnectionString = "Data Source=(LocalDB)\v11.0;AttachDbFilename=Voting-System-PUP\WindowsFormsApplication4\Database\VotingSystem.mdf;Integrated Security=True;";
+            con.Open();  
         }
     }
 }
