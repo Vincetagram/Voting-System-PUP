@@ -58,6 +58,10 @@ namespace WindowsFormsApplication4
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'votingSystemDataSet1.vicepresident' table. You can move, or remove it, as needed.
+            this.vicepresidentTableAdapter.Fill(this.votingSystemDataSet1.vicepresident);
+            // TODO: This line of code loads data into the 'votingSystemDataSet.president' table. You can move, or remove it, as needed.
+            this.presidentTableAdapter.Fill(this.votingSystemDataSet.president);
 
         }
 

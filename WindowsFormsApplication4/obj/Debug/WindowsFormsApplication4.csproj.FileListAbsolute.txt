@@ -14,3 +14,21 @@ C:\Users\Lopez\Documents\Visual Studio 2013\Projects\WindowsFormsApplication4\Wi
 C:\Users\Lopez\Documents\Visual Studio 2013\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
 C:\Users\Lopez\documents\visual studio 2013\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form8.resources
 C:\Users\Lopez\documents\visual studio 2013\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_Admin.resources
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\bin\Debug\VotingSystem.mdf
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\bin\Debug\VotingSystem_log.ldf
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_Login.resources
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_Admin.resources
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form4.resources
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form5.resources
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form6.resources
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form7.resources
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.frm_exit.resources
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,7 +43,17 @@
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.listBox4 = new System.Windows.Forms.ListBox();
             this.listBox5 = new System.Windows.Forms.ListBox();
+            this.votingSystemDataSet = new WindowsFormsApplication4.VotingSystemDataSet();
+            this.presidentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.presidentTableAdapter = new WindowsFormsApplication4.VotingSystemDataSetTableAdapters.presidentTableAdapter();
+            this.votingSystemDataSet1 = new WindowsFormsApplication4.VotingSystemDataSet1();
+            this.vicepresidentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vicepresidentTableAdapter = new WindowsFormsApplication4.VotingSystemDataSet1TableAdapters.vicepresidentTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.votingSystemDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.presidentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.votingSystemDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vicepresidentBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -127,22 +138,28 @@
             // listBox1
             // 
             this.listBox1.BackColor = System.Drawing.Color.Maroon;
+            this.listBox1.DataSource = this.presidentBindingSource;
+            this.listBox1.DisplayMember = "pName";
             this.listBox1.ForeColor = System.Drawing.SystemColors.Control;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(12, 261);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(175, 407);
             this.listBox1.TabIndex = 15;
+            this.listBox1.ValueMember = "pName";
             // 
             // listBox2
             // 
             this.listBox2.BackColor = System.Drawing.Color.Maroon;
+            this.listBox2.DataSource = this.vicepresidentBindingSource;
+            this.listBox2.DisplayMember = "pName";
             this.listBox2.ForeColor = System.Drawing.SystemColors.Control;
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Location = new System.Drawing.Point(237, 261);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(175, 407);
             this.listBox2.TabIndex = 16;
+            this.listBox2.ValueMember = "pName";
             // 
             // listBox3
             // 
@@ -174,6 +191,34 @@
             this.listBox5.Size = new System.Drawing.Size(175, 407);
             this.listBox5.TabIndex = 19;
             // 
+            // votingSystemDataSet
+            // 
+            this.votingSystemDataSet.DataSetName = "VotingSystemDataSet";
+            this.votingSystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // presidentBindingSource
+            // 
+            this.presidentBindingSource.DataMember = "president";
+            this.presidentBindingSource.DataSource = this.votingSystemDataSet;
+            // 
+            // presidentTableAdapter
+            // 
+            this.presidentTableAdapter.ClearBeforeFill = true;
+            // 
+            // votingSystemDataSet1
+            // 
+            this.votingSystemDataSet1.DataSetName = "VotingSystemDataSet1";
+            this.votingSystemDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vicepresidentBindingSource
+            // 
+            this.vicepresidentBindingSource.DataMember = "vicepresident";
+            this.vicepresidentBindingSource.DataSource = this.votingSystemDataSet1;
+            // 
+            // vicepresidentTableAdapter
+            // 
+            this.vicepresidentTableAdapter.ClearBeforeFill = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,6 +242,10 @@
             this.Text = "List View";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.votingSystemDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.presidentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.votingSystemDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vicepresidentBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,5 +266,11 @@
         private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.ListBox listBox4;
         private System.Windows.Forms.ListBox listBox5;
+        private VotingSystemDataSet votingSystemDataSet;
+        private System.Windows.Forms.BindingSource presidentBindingSource;
+        private VotingSystemDataSetTableAdapters.presidentTableAdapter presidentTableAdapter;
+        private VotingSystemDataSet1 votingSystemDataSet1;
+        private System.Windows.Forms.BindingSource vicepresidentBindingSource;
+        private VotingSystemDataSet1TableAdapters.vicepresidentTableAdapter vicepresidentTableAdapter;
     }
 }
