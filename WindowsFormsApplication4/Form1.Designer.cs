@@ -47,6 +47,7 @@
             this.tb_user.Name = "tb_user";
             this.tb_user.Size = new System.Drawing.Size(232, 20);
             this.tb_user.TabIndex = 0;
+            this.tb_user.TextChanged += new System.EventHandler(this.tb_user_TextChanged);
             // 
             // tb_pass
             // 

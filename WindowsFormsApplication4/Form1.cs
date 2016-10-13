@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.Sql;
+using System.Data.OleDb;
+using System.Data.SqlClient; 
 namespace WindowsFormsApplication4
 {
     public partial class Frm_Login : Form
     {
+        SqlConnection con = new SqlConnection();
         public Frm_Login()
         {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = "Data Source=(LocalDB)\v11.0;AttachDbFilename=Voting-System-PUP\WindowsFormsApplication4\Database\VotingSystem.mdf;Integrated Security=True;";
             InitializeComponent();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -54,6 +60,11 @@ namespace WindowsFormsApplication4
         {
             new Frm_Admin().Show();
             this.Hide();
+        }
+
+        private void tb_user_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
