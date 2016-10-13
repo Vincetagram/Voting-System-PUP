@@ -57,8 +57,9 @@ namespace WindowsFormsApplication4
                     command1.Parameters.Add("@password", tb_pass.Text);
                     command1.Parameters.Add("@studno", tb_studno.Text);
                     command1.ExecuteNonQuery();
-                    
+                    con.Close();
                     MessageBox.Show("Succesfully Registered.");
+                    this.Close();
                 }
                 
             }

@@ -138,9 +138,7 @@
             // 
             // listBox2
             // 
-            this.listBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.listBox2.BackColor = System.Drawing.Color.Maroon;
             this.listBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBox2.DataSource = this.vicepresidentBindingSource;
@@ -149,7 +147,7 @@
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Location = new System.Drawing.Point(237, 300);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(175, 366);
+            this.listBox2.Size = new System.Drawing.Size(175, 353);
             this.listBox2.TabIndex = 16;
             this.listBox2.ValueMember = "pName";
             // 

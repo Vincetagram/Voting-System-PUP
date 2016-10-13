@@ -122,7 +122,7 @@
             // btn_admin
             // 
             this.btn_admin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btn_admin.Location = new System.Drawing.Point(540, 199);
+            this.btn_admin.Location = new System.Drawing.Point(540, 200);
             this.btn_admin.Name = "btn_admin";
             this.btn_admin.Size = new System.Drawing.Size(75, 23);
             this.btn_admin.TabIndex = 4;

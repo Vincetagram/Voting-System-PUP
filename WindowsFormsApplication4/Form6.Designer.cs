@@ -32,8 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tb_name = new System.Windows.Forms.TextBox();
             this.tb_partylist = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_add = new System.Windows.Forms.Button();
+            this.btn_return = new System.Windows.Forms.Button();
             this.cb_position = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -61,6 +61,7 @@
             // 
             // tb_name
             // 
+            this.tb_name.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_name.Location = new System.Drawing.Point(118, 12);
             this.tb_name.Name = "tb_name";
             this.tb_name.Size = new System.Drawing.Size(237, 20);
@@ -68,29 +69,31 @@
             // 
             // tb_partylist
             // 
+            this.tb_partylist.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tb_partylist.Location = new System.Drawing.Point(118, 43);
             this.tb_partylist.Name = "tb_partylist";
             this.tb_partylist.Size = new System.Drawing.Size(237, 20);
             this.tb_partylist.TabIndex = 3;
             // 
-            // button1
+            // btn_add
             // 
-            this.button1.Location = new System.Drawing.Point(135, 109);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_add.Location = new System.Drawing.Point(118, 109);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(121, 23);
+            this.btn_add.TabIndex = 5;
+            this.btn_add.Text = "Add";
+            this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
-            // button2
+            // btn_return
             // 
-            this.button2.Location = new System.Drawing.Point(250, 109);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Return";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_return.Location = new System.Drawing.Point(245, 109);
+            this.btn_return.Name = "btn_return";
+            this.btn_return.Size = new System.Drawing.Size(110, 23);
+            this.btn_return.TabIndex = 6;
+            this.btn_return.Text = "Return";
+            this.btn_return.UseVisualStyleBackColor = true;
+            this.btn_return.Click += new System.EventHandler(this.button2_Click);
             // 
             // cb_position
             // 
@@ -104,7 +107,7 @@
             this.cb_position.Location = new System.Drawing.Point(118, 73);
             this.cb_position.Name = "cb_position";
             this.cb_position.Size = new System.Drawing.Size(121, 21);
-            this.cb_position.TabIndex = 6;
+            this.cb_position.TabIndex = 4;
             // 
             // label3
             // 
@@ -126,8 +129,8 @@
             this.ControlBox = false;
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cb_position);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_return);
+            this.Controls.Add(this.btn_add);
             this.Controls.Add(this.tb_partylist);
             this.Controls.Add(this.tb_name);
             this.Controls.Add(this.label2);
@@ -136,6 +139,7 @@
             this.Name = "Frm_addcandidate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Candidate";
+            this.Load += new System.EventHandler(this.Frm_addcandidate_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,8 +151,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tb_name;
         private System.Windows.Forms.TextBox tb_partylist;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.Button btn_return;
         private System.Windows.Forms.ComboBox cb_position;
         private System.Windows.Forms.Label label3;
     }
