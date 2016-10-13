@@ -26,9 +26,9 @@ C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debu
 C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
 C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_Admin.resources
 C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form4.resources
-C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form5.resources
 C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form6.resources
 C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form7.resources
 C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.frm_exit.resources
 C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
 C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_Register.resources

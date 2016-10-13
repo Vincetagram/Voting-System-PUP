@@ -48,12 +48,12 @@ namespace WindowsFormsApplication4
 
         private void button3_Click(object sender, EventArgs e)
         {
-            new Form5().Show();
+            new Frm_Register().Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            new Form5().Show();
+            new Frm_Register().Show();
            
         }
 
