@@ -35,8 +35,11 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(79, 68);
+            this.label1.Location = new System.Drawing.Point(74, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 13);
             this.label1.TabIndex = 0;
@@ -45,7 +48,7 @@
             // btn_yes
             // 
             this.btn_yes.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_yes.Location = new System.Drawing.Point(51, 235);
+            this.btn_yes.Location = new System.Drawing.Point(41, 95);
             this.btn_yes.Name = "btn_yes";
             this.btn_yes.Size = new System.Drawing.Size(75, 23);
             this.btn_yes.TabIndex = 1;
@@ -55,8 +58,9 @@
             // 
             // btn_no
             // 
+            this.btn_no.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_no.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_no.Location = new System.Drawing.Point(152, 235);
+            this.btn_no.Location = new System.Drawing.Point(142, 95);
             this.btn_no.Name = "btn_no";
             this.btn_no.Size = new System.Drawing.Size(75, 23);
             this.btn_no.TabIndex = 3;
@@ -66,15 +70,22 @@
             // 
             // frm_exit
             // 
+            this.AcceptButton = this.btn_yes;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(292, 270);
+            this.CancelButton = this.btn_no;
+            this.ClientSize = new System.Drawing.Size(265, 160);
+            this.ControlBox = false;
             this.Controls.Add(this.btn_no);
             this.Controls.Add(this.btn_yes);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.Control;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frm_exit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Confirm and Exit";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication4
 {
-    partial class Form7
+    partial class Frm_admin
     {
         /// <summary>
         /// Required designer variable.
@@ -66,6 +66,7 @@
             // 
             // btn_signout
             // 
+            this.btn_signout.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_signout.Location = new System.Drawing.Point(194, 230);
             this.btn_signout.Name = "btn_signout";
             this.btn_signout.Size = new System.Drawing.Size(75, 23);
@@ -74,17 +75,23 @@
             this.btn_signout.UseVisualStyleBackColor = true;
             this.btn_signout.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Form7
+            // Frm_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.CancelButton = this.btn_signout;
             this.ClientSize = new System.Drawing.Size(473, 289);
             this.Controls.Add(this.btn_signout);
             this.Controls.Add(this.btn_deletevoter);
             this.Controls.Add(this.btn_delcandidates);
             this.Controls.Add(this.btn_addcandidates);
-            this.Name = "Form7";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "Frm_admin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
             this.Load += new System.EventHandler(this.Form7_Load);
             this.ResumeLayout(false);
