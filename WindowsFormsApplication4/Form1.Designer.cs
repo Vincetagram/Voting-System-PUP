@@ -121,6 +121,7 @@
             // 
             // btn_admin
             // 
+            this.btn_admin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_admin.Location = new System.Drawing.Point(540, 199);
             this.btn_admin.Name = "btn_admin";
             this.btn_admin.Size = new System.Drawing.Size(75, 23);
@@ -131,8 +132,11 @@
             // 
             // Frm_Login
             // 
+            this.AcceptButton = this.btn_login;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(643, 270);
             this.Controls.Add(this.btn_admin);
@@ -145,7 +149,14 @@
             this.Controls.Add(this.tb_pass);
             this.Controls.Add(this.tb_user);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(659, 308);
+            this.MinimumSize = new System.Drawing.Size(659, 308);
             this.Name = "Frm_Login";
+            this.ShowIcon = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log In";
             this.Load += new System.EventHandler(this.Frm_Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

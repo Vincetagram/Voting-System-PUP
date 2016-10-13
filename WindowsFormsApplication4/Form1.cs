@@ -34,7 +34,7 @@ namespace WindowsFormsApplication4
             da.Fill(dt);
             if (dt.Rows.Count > 0)  
             {  
-                new Form2().Show();
+                new Frm_voteview().Show();
                 this.Hide();
             }  
             else  

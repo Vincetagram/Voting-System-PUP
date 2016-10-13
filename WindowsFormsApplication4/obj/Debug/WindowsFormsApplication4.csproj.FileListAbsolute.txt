@@ -32,3 +32,21 @@ C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debu
 C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
 C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
 C:\Users\Palomaria\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_Register.resources
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\bin\Debug\VotingSystem.mdf
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\bin\Debug\VotingSystem_log.ldf
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_Login.resources
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_Admin.resources
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form4.resources
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_Register.resources
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form6.resources
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form7.resources
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.frm_exit.resources
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_voteview.resources

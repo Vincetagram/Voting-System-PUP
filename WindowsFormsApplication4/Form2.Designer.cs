@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication4
 {
-    partial class Form2
+    partial class Frm_voteview
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_voteview));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -37,23 +37,23 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btn_submit = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.presidentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.votingSystemDataSet = new WindowsFormsApplication4.VotingSystemDataSet();
             this.listBox2 = new System.Windows.Forms.ListBox();
+            this.vicepresidentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.votingSystemDataSet1 = new WindowsFormsApplication4.VotingSystemDataSet1();
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.listBox4 = new System.Windows.Forms.ListBox();
             this.listBox5 = new System.Windows.Forms.ListBox();
-            this.votingSystemDataSet = new WindowsFormsApplication4.VotingSystemDataSet();
-            this.presidentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.presidentTableAdapter = new WindowsFormsApplication4.VotingSystemDataSetTableAdapters.presidentTableAdapter();
-            this.votingSystemDataSet1 = new WindowsFormsApplication4.VotingSystemDataSet1();
-            this.vicepresidentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vicepresidentTableAdapter = new WindowsFormsApplication4.VotingSystemDataSet1TableAdapters.vicepresidentTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.votingSystemDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.presidentBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.votingSystemDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.votingSystemDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vicepresidentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.votingSystemDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -117,23 +117,24 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-1, -4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1092, 230);
+            this.pictureBox1.Size = new System.Drawing.Size(1000, 250);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
-            // button8
+            // btn_submit
             // 
-            this.button8.Location = new System.Drawing.Point(533, 715);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(112, 23);
-            this.button8.TabIndex = 14;
-            this.button8.Text = "Submit and Exit";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.btn_submit.Location = new System.Drawing.Point(533, 715);
+            this.btn_submit.Name = "btn_submit";
+            this.btn_submit.Size = new System.Drawing.Size(112, 23);
+            this.btn_submit.TabIndex = 14;
+            this.btn_submit.Text = "Submit and Exit";
+            this.btn_submit.UseVisualStyleBackColor = true;
+            this.btn_submit.Click += new System.EventHandler(this.button8_Click);
             // 
             // listBox1
             // 
@@ -148,6 +149,16 @@
             this.listBox1.TabIndex = 15;
             this.listBox1.ValueMember = "pName";
             // 
+            // presidentBindingSource
+            // 
+            this.presidentBindingSource.DataMember = "president";
+            this.presidentBindingSource.DataSource = this.votingSystemDataSet;
+            // 
+            // votingSystemDataSet
+            // 
+            this.votingSystemDataSet.DataSetName = "VotingSystemDataSet";
+            this.votingSystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // listBox2
             // 
             this.listBox2.BackColor = System.Drawing.Color.Maroon;
@@ -160,6 +171,16 @@
             this.listBox2.Size = new System.Drawing.Size(175, 407);
             this.listBox2.TabIndex = 16;
             this.listBox2.ValueMember = "pName";
+            // 
+            // vicepresidentBindingSource
+            // 
+            this.vicepresidentBindingSource.DataMember = "vicepresident";
+            this.vicepresidentBindingSource.DataSource = this.votingSystemDataSet1;
+            // 
+            // votingSystemDataSet1
+            // 
+            this.votingSystemDataSet1.DataSetName = "VotingSystemDataSet1";
+            this.votingSystemDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // listBox3
             // 
@@ -191,38 +212,20 @@
             this.listBox5.Size = new System.Drawing.Size(175, 407);
             this.listBox5.TabIndex = 19;
             // 
-            // votingSystemDataSet
-            // 
-            this.votingSystemDataSet.DataSetName = "VotingSystemDataSet";
-            this.votingSystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // presidentBindingSource
-            // 
-            this.presidentBindingSource.DataMember = "president";
-            this.presidentBindingSource.DataSource = this.votingSystemDataSet;
-            // 
             // presidentTableAdapter
             // 
             this.presidentTableAdapter.ClearBeforeFill = true;
-            // 
-            // votingSystemDataSet1
-            // 
-            this.votingSystemDataSet1.DataSetName = "VotingSystemDataSet1";
-            this.votingSystemDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vicepresidentBindingSource
-            // 
-            this.vicepresidentBindingSource.DataMember = "vicepresident";
-            this.vicepresidentBindingSource.DataSource = this.votingSystemDataSet1;
             // 
             // vicepresidentTableAdapter
             // 
             this.vicepresidentTableAdapter.ClearBeforeFill = true;
             // 
-            // Form2
+            // Frm_voteview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(1088, 750);
             this.Controls.Add(this.listBox5);
@@ -230,7 +233,7 @@
             this.Controls.Add(this.listBox3);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.btn_submit);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -238,14 +241,17 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Name = "Form2";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "Frm_voteview";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "List View";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.votingSystemDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.presidentBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.votingSystemDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.votingSystemDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vicepresidentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.votingSystemDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,7 +266,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btn_submit;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox listBox3;

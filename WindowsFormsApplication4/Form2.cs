@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication4
 {
-    public partial class Form2 : Form
+    public partial class Frm_voteview : Form
     {
-        public Form2()
+        public Frm_voteview()
         {
             InitializeComponent();
         }
