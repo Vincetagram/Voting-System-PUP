@@ -44,9 +44,9 @@ C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\
 C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_Admin.resources
 C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form4.resources
 C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_Register.resources
-C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form6.resources
-C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form7.resources
 C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.frm_exit.resources
 C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
 C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
 C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_voteview.resources
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_addcandidate.resources
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_adminselect.resources

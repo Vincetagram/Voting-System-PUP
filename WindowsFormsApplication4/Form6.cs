@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication4
 {
-    public partial class Form6 : Form
+    public partial class Frm_addcandidate : Form
     {
-        public Form6()
+        public Frm_addcandidate()
         {
             InitializeComponent();
         }

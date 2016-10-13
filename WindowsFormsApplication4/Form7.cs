@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication4
 {
-    public partial class Frm_admin : Form
+    public partial class Frm_adminselect : Form
     {
-        public Frm_admin()
+        public Frm_adminselect()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace WindowsFormsApplication4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Form6().Show();
+            new Frm_addcandidate().Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

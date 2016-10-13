@@ -61,7 +61,7 @@
             this.btn_confirm.Location = new System.Drawing.Point(114, 113);
             this.btn_confirm.Name = "btn_confirm";
             this.btn_confirm.Size = new System.Drawing.Size(75, 23);
-            this.btn_confirm.TabIndex = 6;
+            this.btn_confirm.TabIndex = 14;
             this.btn_confirm.Text = "Confirm";
             this.btn_confirm.UseVisualStyleBackColor = true;
             this.btn_confirm.Click += new System.EventHandler(this.btn_confirm_Click);
@@ -71,7 +71,7 @@
             this.button2.Location = new System.Drawing.Point(231, 113);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 23);
-            this.button2.TabIndex = 7;
+            this.button2.TabIndex = 15;
             this.button2.Text = "Return to Log In";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -120,12 +120,12 @@
             this.ClientSize = new System.Drawing.Size(409, 156);
             this.Controls.Add(this.tb_pass);
             this.Controls.Add(this.tb_user);
+            this.Controls.Add(this.tb_studno);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_confirm);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.tb_studno);
             this.Name = "Frm_Register";
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Frm_Register_Load);

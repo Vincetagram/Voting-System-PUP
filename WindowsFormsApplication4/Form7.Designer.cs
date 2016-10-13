@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication4
 {
-    partial class Frm_admin
+    partial class Frm_adminselect
     {
         /// <summary>
         /// Required designer variable.
@@ -75,14 +75,13 @@
             this.btn_signout.UseVisualStyleBackColor = true;
             this.btn_signout.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Frm_admin
+            // Frm_adminselect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.CancelButton = this.btn_signout;
             this.ClientSize = new System.Drawing.Size(473, 289);
             this.Controls.Add(this.btn_signout);
             this.Controls.Add(this.btn_deletevoter);
@@ -90,7 +89,7 @@
             this.Controls.Add(this.btn_addcandidates);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Frm_admin";
+            this.Name = "Frm_adminselect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
             this.Load += new System.EventHandler(this.Form7_Load);

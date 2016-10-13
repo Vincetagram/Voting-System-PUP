@@ -60,9 +60,9 @@
             // 
             // btn_login
             // 
-            this.btn_login.Location = new System.Drawing.Point(224, 235);
+            this.btn_login.Location = new System.Drawing.Point(205, 235);
             this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(75, 23);
+            this.btn_login.Size = new System.Drawing.Size(115, 23);
             this.btn_login.TabIndex = 2;
             this.btn_login.Text = "Log in";
             this.btn_login.UseVisualStyleBackColor = true;
@@ -102,8 +102,8 @@
             // 
             this.btn_register.Location = new System.Drawing.Point(326, 235);
             this.btn_register.Name = "btn_register";
-            this.btn_register.Size = new System.Drawing.Size(74, 23);
-            this.btn_register.TabIndex = 7;
+            this.btn_register.Size = new System.Drawing.Size(111, 23);
+            this.btn_register.TabIndex = 3;
             this.btn_register.Text = "Register";
             this.btn_register.UseVisualStyleBackColor = true;
             this.btn_register.Click += new System.EventHandler(this.button4_Click);
@@ -125,7 +125,7 @@
             this.btn_admin.Location = new System.Drawing.Point(540, 199);
             this.btn_admin.Name = "btn_admin";
             this.btn_admin.Size = new System.Drawing.Size(75, 23);
-            this.btn_admin.TabIndex = 9;
+            this.btn_admin.TabIndex = 4;
             this.btn_admin.Text = "Admin";
             this.btn_admin.UseVisualStyleBackColor = true;
             this.btn_admin.Click += new System.EventHandler(this.button3_Click_1);

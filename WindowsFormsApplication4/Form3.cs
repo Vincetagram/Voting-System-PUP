@@ -20,7 +20,7 @@ namespace WindowsFormsApplication4
         private void button1_Click(object sender, EventArgs e)
         {
          
-            new Frm_admin().Show();
+            new Frm_adminselect().Show();
             this.Close();
         }
     }
