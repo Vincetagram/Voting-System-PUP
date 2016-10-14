@@ -33,9 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_submit = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -45,8 +43,6 @@
             this.vicepresidentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.votingSystemDataSet1 = new WindowsFormsApplication4.VotingSystemDataSet1();
             this.listBox3 = new System.Windows.Forms.ListBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
-            this.listBox5 = new System.Windows.Forms.ListBox();
             this.presidentTableAdapter = new WindowsFormsApplication4.VotingSystemDataSetTableAdapters.presidentTableAdapter();
             this.vicepresidentTableAdapter = new WindowsFormsApplication4.VotingSystemDataSet1TableAdapters.vicepresidentTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -86,34 +82,15 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(739, 261);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Treasurer";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(512, 261);
+            this.button4.Location = new System.Drawing.Point(740, 261);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 4;
-            this.button4.Text = "Secretary";
+            this.button4.Text = "Councilors";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(959, 261);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Misc1";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -193,28 +170,8 @@
             this.listBox3.FormattingEnabled = true;
             this.listBox3.Location = new System.Drawing.Point(459, 300);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(175, 407);
+            this.listBox3.Size = new System.Drawing.Size(608, 368);
             this.listBox3.TabIndex = 17;
-            // 
-            // listBox4
-            // 
-            this.listBox4.BackColor = System.Drawing.Color.Maroon;
-            this.listBox4.ForeColor = System.Drawing.SystemColors.Control;
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.Location = new System.Drawing.Point(683, 300);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(175, 368);
-            this.listBox4.TabIndex = 18;
-            // 
-            // listBox5
-            // 
-            this.listBox5.BackColor = System.Drawing.Color.Maroon;
-            this.listBox5.ForeColor = System.Drawing.SystemColors.Control;
-            this.listBox5.FormattingEnabled = true;
-            this.listBox5.Location = new System.Drawing.Point(901, 300);
-            this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(175, 368);
-            this.listBox5.TabIndex = 19;
             // 
             // presidentTableAdapter
             // 
@@ -232,16 +189,12 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(1088, 750);
-            this.Controls.Add(this.listBox5);
-            this.Controls.Add(this.listBox4);
             this.Controls.Add(this.listBox3);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btn_submit);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -266,16 +219,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_submit;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox4;
-        private System.Windows.Forms.ListBox listBox5;
         private VotingSystemDataSet votingSystemDataSet;
         private System.Windows.Forms.BindingSource presidentBindingSource;
         private VotingSystemDataSetTableAdapters.presidentTableAdapter presidentTableAdapter;
