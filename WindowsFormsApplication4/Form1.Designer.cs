@@ -38,7 +38,7 @@
             this.btn_register = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_admin = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+           ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tb_user
@@ -130,6 +130,9 @@
             this.btn_admin.UseVisualStyleBackColor = true;
             this.btn_admin.Click += new System.EventHandler(this.button3_Click_1);
             // 
+            // votersTableAdapter1
+            // 
+           // 
             // Frm_Login
             // 
             this.AcceptButton = this.btn_login;

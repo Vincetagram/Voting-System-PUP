@@ -24,11 +24,11 @@ namespace WindowsFormsApplication4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemConnectionString);
+            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemv2ConnectionString);
             con.Open();
             string userid = tb_user.Text;
             string password = tb_pass.Text;
-            SqlCommand cmd = new SqlCommand("select uname,upass from voters where uname='" + tb_user.Text + "'and upass='" + tb_pass.Text + "'", con);  
+            SqlCommand cmd = new SqlCommand("select userName,userPass from voters where userName='" + tb_user.Text + "'and userPass='" + tb_pass.Text + "'and isVoted=0", con);  
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();  
             da.Fill(dt);

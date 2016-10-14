@@ -36,13 +36,15 @@
             this.btn_return = new System.Windows.Forms.Button();
             this.cb_position = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.tb_studno = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(74, 19);
+            this.label1.Location = new System.Drawing.Point(78, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
@@ -52,7 +54,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(59, 46);
+            this.label2.Location = new System.Drawing.Point(63, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 1;
@@ -62,7 +64,7 @@
             // tb_name
             // 
             this.tb_name.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.tb_name.Location = new System.Drawing.Point(118, 12);
+            this.tb_name.Location = new System.Drawing.Point(122, 60);
             this.tb_name.Name = "tb_name";
             this.tb_name.Size = new System.Drawing.Size(237, 20);
             this.tb_name.TabIndex = 2;
@@ -70,14 +72,14 @@
             // tb_partylist
             // 
             this.tb_partylist.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.tb_partylist.Location = new System.Drawing.Point(118, 43);
+            this.tb_partylist.Location = new System.Drawing.Point(122, 91);
             this.tb_partylist.Name = "tb_partylist";
             this.tb_partylist.Size = new System.Drawing.Size(237, 20);
             this.tb_partylist.TabIndex = 3;
             // 
             // btn_add
             // 
-            this.btn_add.Location = new System.Drawing.Point(118, 109);
+            this.btn_add.Location = new System.Drawing.Point(122, 157);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(121, 23);
             this.btn_add.TabIndex = 5;
@@ -87,7 +89,7 @@
             // 
             // btn_return
             // 
-            this.btn_return.Location = new System.Drawing.Point(245, 109);
+            this.btn_return.Location = new System.Drawing.Point(249, 157);
             this.btn_return.Name = "btn_return";
             this.btn_return.Size = new System.Drawing.Size(110, 23);
             this.btn_return.TabIndex = 6;
@@ -104,7 +106,7 @@
             "Secretary",
             "Treasurer",
             "Misc."});
-            this.cb_position.Location = new System.Drawing.Point(118, 73);
+            this.cb_position.Location = new System.Drawing.Point(122, 121);
             this.cb_position.Name = "cb_position";
             this.cb_position.Size = new System.Drawing.Size(121, 21);
             this.cb_position.TabIndex = 4;
@@ -113,20 +115,40 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(65, 76);
+            this.label3.Location = new System.Drawing.Point(69, 124);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Position:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // tb_studno
+            // 
+            this.tb_studno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.tb_studno.Location = new System.Drawing.Point(122, 30);
+            this.tb_studno.Name = "tb_studno";
+            this.tb_studno.Size = new System.Drawing.Size(237, 20);
+            this.tb_studno.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.Control;
+            this.label4.Location = new System.Drawing.Point(52, 37);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Student No:";
+            // 
             // Frm_addcandidate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.ClientSize = new System.Drawing.Size(458, 156);
+            this.ClientSize = new System.Drawing.Size(458, 208);
             this.ControlBox = false;
+            this.Controls.Add(this.tb_studno);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cb_position);
             this.Controls.Add(this.btn_return);
@@ -155,5 +177,7 @@
         private System.Windows.Forms.Button btn_return;
         private System.Windows.Forms.ComboBox cb_position;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tb_studno;
+        private System.Windows.Forms.Label label4;
     }
 }

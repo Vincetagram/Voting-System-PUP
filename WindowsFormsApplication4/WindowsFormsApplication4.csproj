@@ -11,6 +11,7 @@
     <AssemblyName>WindowsFormsApplication4</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -109,30 +109,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VotingSystemDataSet.Designer.cs">
+    <Compile Include="VotingSystemv2DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>VotingSystemDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="VotingSystemDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VotingSystemDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="VotingSystemDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VotingSystemDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="VotingSystemDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VotingSystemDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="VotingSystemDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VotingSystemDataSet4.xsd</DependentUpon>
+      <DependentUpon>VotingSystemv2DataSet.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -176,60 +156,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="VotingSystemDataSet.xsc">
-      <DependentUpon>VotingSystemDataSet.xsd</DependentUpon>
+    <None Include="VotingSystemv2DataSet.xsc">
+      <DependentUpon>VotingSystemv2DataSet.xsd</DependentUpon>
     </None>
-    <None Include="VotingSystemDataSet.xsd">
+    <None Include="VotingSystemv2DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VotingSystemDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>VotingSystemv2DataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="VotingSystemDataSet.xss">
-      <DependentUpon>VotingSystemDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="VotingSystemDataSet1.xsc">
-      <DependentUpon>VotingSystemDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="VotingSystemDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VotingSystemDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="VotingSystemDataSet1.xss">
-      <DependentUpon>VotingSystemDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="VotingSystemDataSet2.xsc">
-      <DependentUpon>VotingSystemDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="VotingSystemDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VotingSystemDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="VotingSystemDataSet2.xss">
-      <DependentUpon>VotingSystemDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="VotingSystemDataSet3.xsc">
-      <DependentUpon>VotingSystemDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="VotingSystemDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VotingSystemDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="VotingSystemDataSet3.xss">
-      <DependentUpon>VotingSystemDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="VotingSystemDataSet4.xsc">
-      <DependentUpon>VotingSystemDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="VotingSystemDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VotingSystemDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="VotingSystemDataSet4.xss">
-      <DependentUpon>VotingSystemDataSet4.xsd</DependentUpon>
+    <None Include="VotingSystemv2DataSet.xss">
+      <DependentUpon>VotingSystemv2DataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -238,6 +174,13 @@
   <ItemGroup>
     <Content Include="VotingSystem.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VotingSystemv2.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VotingSystemv2_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>VotingSystemv2.mdf</DependentUpon>
     </Content>
     <Content Include="VotingSystem_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

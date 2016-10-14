@@ -31,18 +31,20 @@ namespace WindowsFormsApplication4
 
         private void Frm_Register_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemConnectionString);
+            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemv2ConnectionString);
         }
 
         private void btn_confirm_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemConnectionString);
+            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemv2ConnectionString);
             
 
-            using (SqlCommand command = new SqlCommand("SELECT COUNT(*) from voters where uname like @username", con))
+            using (SqlCommand command = new SqlCommand("SELECT COUNT(*) from voters where userName like @username and studNo like @studentno", con))
             {
                 con.Open();
                 command.Parameters.AddWithValue("@username", tb_user.Text);
+                command.Parameters.AddWithValue("@studentno", tb_studno.Text);
+                
                 int userCount = (int)command.ExecuteScalar();
                 if (userCount > 0)
                 {
@@ -50,9 +52,8 @@ namespace WindowsFormsApplication4
                 }
                 else
                 {
-                    String query = "INSERT INTO voters (userid,uname,upass,ustudno) VALUES(@id,@username,@password, @studno)";
+                    String query = "INSERT INTO voters (studNo,userName,userPass) VALUES( @studno,@username,@password)";
                     SqlCommand command1 = new SqlCommand(query, con);
-                    command1.Parameters.Add("@id", 1);
                     command1.Parameters.Add("@username", tb_user.Text);
                     command1.Parameters.Add("@password", tb_pass.Text);
                     command1.Parameters.Add("@studno", tb_studno.Text);

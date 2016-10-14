@@ -121,7 +121,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA+gAAAD6CAYAAAAyVW3pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgCgUPLCZHnvDf
+        YQUAAAAJcEhZcwAACw0AAAsNAe0HwCwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgCgUPLCZHnvDf
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAMyhSURBVHhe7J13XBVHF4Yv
         xd577xo1xcSYqqaYGBNN0/RP0zSJ6c30au8o9l5RQaWKiKKIKIhUe6F3EcXeTaLvN2cui3v3zqUoKuj5
         4/nJnTk7O7s74H33nDnHFBMTA4ZhGIZhGIZhGIZhbi0s0BmGYRiGYRiGYRimBMACnWEYhmEYhmEYhmFK
@@ -999,6 +999,9 @@
         AABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="votersTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

@@ -50,3 +50,5 @@ C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\
 C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_voteview.resources
 C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_addcandidate.resources
 C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Frm_adminselect.resources
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\bin\Debug\VotingSystemv2.mdf
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\bin\Debug\VotingSystemv2_log.ldf
