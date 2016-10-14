@@ -15,7 +15,7 @@ namespace WindowsFormsApplication4
     {
         public Frm_Register()
         {
-            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemConnectionString);
+            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemv2ConnectionString);
             InitializeComponent();
         }
 

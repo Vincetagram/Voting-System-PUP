@@ -35,28 +35,38 @@ namespace WindowsFormsApplication4
 
         private void Frm_addcandidate_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemConnectionString);
+            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemv2ConnectionString);
 
         }
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemConnectionString);
+            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemv2ConnectionString);
             if (con.State == ConnectionState.Closed)
             {
                 con.Open();
-            }
-            if (cb_position.Text.ToUpper() == "PRESIDENT")
+                            }
+            using (SqlCommand command = new SqlCommand("SELECT COUNT(*) from candidate where studNo like @studentno", con))
             {
-                String query = "INSERT INTO president (pID,pName,pParty,image) VALUES(@id,@username,@password, @studno)";
-            }
-            else if (cb_position.Text.ToUpper() == "VICE-PRESIDENT")
-            {
-
-            }
-            else
-            {
-                MessageBox.Show("PLEASE SELECT POSITION.");
+                command.Parameters.AddWithValue("@studentno", tb_studno.Text.ToUpper());
+                int userCount = (int)command.ExecuteScalar();
+                if (userCount > 0)
+                {
+                    MessageBox.Show("USER ALREADY EXISTS!");
+                }
+                else
+                {
+                    String query = "INSERT INTO candidate (studNo, cName, cParty,cPosition) VALUES(@studno,@candidatename,@partylist, @position)";
+                    SqlCommand command1 = new SqlCommand(query, con);
+                    command1.Parameters.Add("@studno", tb_studno.Text.ToUpper());
+                    command1.Parameters.Add("@candidatename", tb_name.Text.ToUpper());
+                    command1.Parameters.Add("@partylist", tb_partylist.Text.ToUpper());
+                    command1.Parameters.Add("@position", cb_position.Text.ToUpper());
+                    command1.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Succesfully Registered.");
+                    this.Close();
+                }
             }
         }
     }

@@ -58,6 +58,8 @@ namespace WindowsFormsApplication4
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'votingSystemv2DataSet2.candidate' table. You can move, or remove it, as needed.
+            this.candidateTableAdapter.Fill(this.votingSystemv2DataSet2.candidate);
 
         }
 
@@ -68,6 +70,19 @@ namespace WindowsFormsApplication4
 
         private void button4_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.candidateTableAdapter.FillBy(this.votingSystemv2DataSet2.candidate);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
 
         }
     }

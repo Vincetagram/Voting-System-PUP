@@ -26,17 +26,6 @@ namespace WindowsFormsApplication4.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\VotingSystem.mdf;Int" +
-            "egrated Security=True;Connect Timeout=30")]
-        public string VotingSystemConnectionString {
-            get {
-                return ((string)(this["VotingSystemConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\VotingSystemv2.mdf;I" +
             "ntegrated Security=True;Connect Timeout=30")]
         public string VotingSystemv2ConnectionString {

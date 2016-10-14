@@ -17,7 +17,7 @@ namespace WindowsFormsApplication4
         SqlConnection con = new SqlConnection();
         public Frm_Login()
         {
-            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemConnectionString);
+            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemv2ConnectionString);
             InitializeComponent();
             
         }
@@ -86,7 +86,7 @@ namespace WindowsFormsApplication4
 
         private void Frm_Login_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemConnectionString);
+            SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemv2ConnectionString);
             con.Open();  
         }
     }
