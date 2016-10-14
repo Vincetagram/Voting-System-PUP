@@ -82,6 +82,15 @@ WHERE cPosition = 'PRESIDENT'</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
+              <DbSource ConnectionRef="VotingSystemv2ConnectionString (Settings)" DbObjectName="dbo.candidate" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy1" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy1" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillBy1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT candidateID, studNo, cName, cParty, cPosition, cTally FROM dbo.candidate
+WHERE cPosition = 'PRESIDENT'</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
             </Sources>
           </TableAdapter>
         </Tables>
@@ -92,7 +101,7 @@ WHERE cPosition = 'PRESIDENT'</CommandText>
   <xs:element name="VotingSystemv2DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="VotingSystemv2DataSet2" msprop:Generator_UserDSName="VotingSystemv2DataSet2">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="candidate" msprop:Generator_TableClassName="candidateDataTable" msprop:Generator_TableVarName="tablecandidate" msprop:Generator_RowChangedName="candidateRowChanged" msprop:Generator_TablePropName="candidate" msprop:Generator_RowDeletingName="candidateRowDeleting" msprop:Generator_RowChangingName="candidateRowChanging" msprop:Generator_RowEvHandlerName="candidateRowChangeEventHandler" msprop:Generator_RowDeletedName="candidateRowDeleted" msprop:Generator_RowClassName="candidateRow" msprop:Generator_UserTableName="candidate" msprop:Generator_RowEvArgName="candidateRowChangeEvent">
+        <xs:element name="candidate" msprop:Generator_TableClassName="candidateDataTable" msprop:Generator_TableVarName="tablecandidate" msprop:Generator_TablePropName="candidate" msprop:Generator_RowDeletingName="candidateRowDeleting" msprop:Generator_RowChangingName="candidateRowChanging" msprop:Generator_RowEvHandlerName="candidateRowChangeEventHandler" msprop:Generator_RowDeletedName="candidateRowDeleted" msprop:Generator_UserTableName="candidate" msprop:Generator_RowChangedName="candidateRowChanged" msprop:Generator_RowEvArgName="candidateRowChangeEvent" msprop:Generator_RowClassName="candidateRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="candidateID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncandidateID" msprop:Generator_ColumnPropNameInRow="candidateID" msprop:Generator_ColumnPropNameInTable="candidateIDColumn" msprop:Generator_UserColumnName="candidateID" type="xs:int" />

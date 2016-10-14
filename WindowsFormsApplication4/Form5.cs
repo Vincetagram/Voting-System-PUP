@@ -43,7 +43,7 @@ namespace WindowsFormsApplication4
             {
                 con.Open();
                 command.Parameters.AddWithValue("@username", tb_user.Text);
-                command.Parameters.AddWithValue("@studentno", tb_studno.Text);
+                command.Parameters.AddWithValue("@studentno", tb_studno.Text.ToUpper());
                 
                 int userCount = (int)command.ExecuteScalar();
                 if (userCount > 0)
@@ -56,7 +56,7 @@ namespace WindowsFormsApplication4
                     SqlCommand command1 = new SqlCommand(query, con);
                     command1.Parameters.Add("@username", tb_user.Text);
                     command1.Parameters.Add("@password", tb_pass.Text);
-                    command1.Parameters.Add("@studno", tb_studno.Text);
+                    command1.Parameters.Add("@studno", tb_studno.Text.ToUpper());
                     command1.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Succesfully Registered.");

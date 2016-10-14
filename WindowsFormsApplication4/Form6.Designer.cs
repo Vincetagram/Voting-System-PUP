@@ -89,6 +89,7 @@
             // 
             // btn_return
             // 
+            this.btn_return.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_return.Location = new System.Drawing.Point(249, 157);
             this.btn_return.Name = "btn_return";
             this.btn_return.Size = new System.Drawing.Size(110, 23);
@@ -99,6 +100,7 @@
             // 
             // cb_position
             // 
+            this.cb_position.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.cb_position.FormattingEnabled = true;
             this.cb_position.Items.AddRange(new object[] {
             "President",
@@ -140,9 +142,11 @@
             // 
             // Frm_addcandidate
             // 
+            this.AcceptButton = this.btn_add;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.CancelButton = this.btn_return;
             this.ClientSize = new System.Drawing.Size(458, 208);
             this.ControlBox = false;
             this.Controls.Add(this.tb_studno);
