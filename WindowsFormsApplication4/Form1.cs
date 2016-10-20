@@ -34,11 +34,12 @@ namespace WindowsFormsApplication4
             da.Fill(dt);
             if (dt.Rows.Count > 0)  
             {  
-                new Frm_voteview().Show();
+                new Frm_voteview(userid).Show();
                 this.Hide();
             }  
             else  
-            {  
+            {
+
                 MessageBox.Show("Invalid Login please check username and password");  
             }  
             con.Close(); 
@@ -60,16 +61,6 @@ namespace WindowsFormsApplication4
         private void button2_Click(object sender, EventArgs e)
         {
             new Form4().Show();
-          
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -79,15 +70,10 @@ namespace WindowsFormsApplication4
             this.Hide();
         }
 
-        private void tb_user_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Frm_Login_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemv2ConnectionString);
-            con.Open();  
+            
         }
     }
 }

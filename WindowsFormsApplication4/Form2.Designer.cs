@@ -36,26 +36,26 @@
             this.btn_councilors = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_submit = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.lb_councilor = new System.Windows.Forms.ListBox();
-            this.ta_president = new WindowsFormsApplication4.VotingSystemv2DataSet3TableAdapters.candidateTableAdapter();
-            this.votingSystemv2DataSet4 = new WindowsFormsApplication4.VotingSystemv2DataSet4();
-            this.vpBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.candidateTableAdapter = new WindowsFormsApplication4.VotingSystemv2DataSet4TableAdapters.candidateTableAdapter();
-            this.votingSystemv2DataSet5 = new WindowsFormsApplication4.VotingSystemv2DataSet5();
+            this.cb_president = new System.Windows.Forms.ComboBox();
             this.pBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.candidateTableAdapter1 = new WindowsFormsApplication4.VotingSystemv2DataSet5TableAdapters.candidateTableAdapter();
-            this.votingSystemv2DataSet7 = new WindowsFormsApplication4.VotingSystemv2DataSet7();
+            this.votingSystemv2DataSet5 = new WindowsFormsApplication4.VotingSystemv2DataSet5();
+            this.cb_vpresident = new System.Windows.Forms.ComboBox();
+            this.vpBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.votingSystemv2DataSet4 = new WindowsFormsApplication4.VotingSystemv2DataSet4();
             this.cBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.votingSystemv2DataSet7 = new WindowsFormsApplication4.VotingSystemv2DataSet7();
+            this.ta_president = new WindowsFormsApplication4.VotingSystemv2DataSet3TableAdapters.candidateTableAdapter();
+            this.candidateTableAdapter = new WindowsFormsApplication4.VotingSystemv2DataSet4TableAdapters.candidateTableAdapter();
+            this.candidateTableAdapter1 = new WindowsFormsApplication4.VotingSystemv2DataSet5TableAdapters.candidateTableAdapter();
             this.candidateTableAdapter2 = new WindowsFormsApplication4.VotingSystemv2DataSet7TableAdapters.candidateTableAdapter();
+            this.lb_councilor = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.votingSystemv2DataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vpBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.votingSystemv2DataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.votingSystemv2DataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.votingSystemv2DataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vpBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.votingSystemv2DataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.votingSystemv2DataSet7)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -77,7 +77,6 @@
             this.btn_president.TabStop = false;
             this.btn_president.Text = "President";
             this.btn_president.UseVisualStyleBackColor = true;
-            this.btn_president.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_vp
             // 
@@ -88,7 +87,6 @@
             this.btn_vp.TabStop = false;
             this.btn_vp.Text = "Vice President";
             this.btn_vp.UseVisualStyleBackColor = true;
-            this.btn_vp.Click += new System.EventHandler(this.button2_Click);
             // 
             // btn_councilors
             // 
@@ -98,7 +96,6 @@
             this.btn_councilors.TabIndex = 4;
             this.btn_councilors.Text = "Councilors";
             this.btn_councilors.UseVisualStyleBackColor = true;
-            this.btn_councilors.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox1
             // 
@@ -121,61 +118,15 @@
             this.btn_submit.UseVisualStyleBackColor = true;
             this.btn_submit.Click += new System.EventHandler(this.btn_submit_Click);
             // 
-            // comboBox1
+            // cb_president
             // 
-            this.comboBox1.DataSource = this.pBindingSource;
-            this.comboBox1.DisplayMember = "cName";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(149, 263);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(292, 21);
-            this.comboBox1.TabIndex = 18;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DataSource = this.vpBindingSource;
-            this.comboBox2.DisplayMember = "cName";
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(555, 262);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(266, 21);
-            this.comboBox2.TabIndex = 19;
-            // 
-            // lb_councilor
-            // 
-            this.lb_councilor.DataSource = this.cBindingSource;
-            this.lb_councilor.DisplayMember = "cName";
-            this.lb_councilor.FormattingEnabled = true;
-            this.lb_councilor.Location = new System.Drawing.Point(148, 290);
-            this.lb_councilor.MultiColumn = true;
-            this.lb_councilor.Name = "lb_councilor";
-            this.lb_councilor.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.lb_councilor.Size = new System.Drawing.Size(673, 121);
-            this.lb_councilor.TabIndex = 21;
-            // 
-            // ta_president
-            // 
-            this.ta_president.ClearBeforeFill = true;
-            // 
-            // votingSystemv2DataSet4
-            // 
-            this.votingSystemv2DataSet4.DataSetName = "VotingSystemv2DataSet4";
-            this.votingSystemv2DataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vpBindingSource
-            // 
-            this.vpBindingSource.DataMember = "candidate";
-            this.vpBindingSource.DataSource = this.votingSystemv2DataSet4;
-            this.vpBindingSource.Filter = "cPosition = \'VICE-PRESIDENT\'";
-            // 
-            // candidateTableAdapter
-            // 
-            this.candidateTableAdapter.ClearBeforeFill = true;
-            // 
-            // votingSystemv2DataSet5
-            // 
-            this.votingSystemv2DataSet5.DataSetName = "VotingSystemv2DataSet5";
-            this.votingSystemv2DataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.cb_president.DataSource = this.pBindingSource;
+            this.cb_president.DisplayMember = "cName";
+            this.cb_president.FormattingEnabled = true;
+            this.cb_president.Location = new System.Drawing.Point(149, 263);
+            this.cb_president.Name = "cb_president";
+            this.cb_president.Size = new System.Drawing.Size(292, 21);
+            this.cb_president.TabIndex = 18;
             // 
             // pBindingSource
             // 
@@ -183,14 +134,31 @@
             this.pBindingSource.DataSource = this.votingSystemv2DataSet5;
             this.pBindingSource.Filter = "cPosition = \'PRESIDENT\'";
             // 
-            // candidateTableAdapter1
+            // votingSystemv2DataSet5
             // 
-            this.candidateTableAdapter1.ClearBeforeFill = true;
+            this.votingSystemv2DataSet5.DataSetName = "VotingSystemv2DataSet5";
+            this.votingSystemv2DataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // votingSystemv2DataSet7
+            // cb_vpresident
             // 
-            this.votingSystemv2DataSet7.DataSetName = "VotingSystemv2DataSet7";
-            this.votingSystemv2DataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.cb_vpresident.DataSource = this.vpBindingSource;
+            this.cb_vpresident.DisplayMember = "cName";
+            this.cb_vpresident.FormattingEnabled = true;
+            this.cb_vpresident.Location = new System.Drawing.Point(555, 262);
+            this.cb_vpresident.Name = "cb_vpresident";
+            this.cb_vpresident.Size = new System.Drawing.Size(266, 21);
+            this.cb_vpresident.TabIndex = 19;
+            // 
+            // vpBindingSource
+            // 
+            this.vpBindingSource.DataMember = "candidate";
+            this.vpBindingSource.DataSource = this.votingSystemv2DataSet4;
+            this.vpBindingSource.Filter = "cPosition = \'VICE-PRESIDENT\'";
+            // 
+            // votingSystemv2DataSet4
+            // 
+            this.votingSystemv2DataSet4.DataSetName = "VotingSystemv2DataSet4";
+            this.votingSystemv2DataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // cBindingSource
             // 
@@ -198,9 +166,41 @@
             this.cBindingSource.DataSource = this.votingSystemv2DataSet7;
             this.cBindingSource.Filter = "cPosition = \'COUNCILOR\'";
             // 
+            // votingSystemv2DataSet7
+            // 
+            this.votingSystemv2DataSet7.DataSetName = "VotingSystemv2DataSet7";
+            this.votingSystemv2DataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ta_president
+            // 
+            this.ta_president.ClearBeforeFill = true;
+            // 
+            // candidateTableAdapter
+            // 
+            this.candidateTableAdapter.ClearBeforeFill = true;
+            // 
+            // candidateTableAdapter1
+            // 
+            this.candidateTableAdapter1.ClearBeforeFill = true;
+            // 
             // candidateTableAdapter2
             // 
             this.candidateTableAdapter2.ClearBeforeFill = true;
+            // 
+            // lb_councilor
+            // 
+            this.lb_councilor.ColumnWidth = 336;
+            this.lb_councilor.DataSource = this.cBindingSource;
+            this.lb_councilor.DisplayMember = "cName";
+            this.lb_councilor.FormattingEnabled = true;
+            this.lb_councilor.HorizontalExtent = 673;
+            this.lb_councilor.Location = new System.Drawing.Point(148, 290);
+            this.lb_councilor.MultiColumn = true;
+            this.lb_councilor.Name = "lb_councilor";
+            this.lb_councilor.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.lb_councilor.Size = new System.Drawing.Size(673, 121);
+            this.lb_councilor.TabIndex = 21;
+            this.lb_councilor.ValueMember = "cName";
             // 
             // Frm_voteview
             // 
@@ -211,8 +211,8 @@
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(883, 454);
             this.Controls.Add(this.lb_councilor);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cb_vpresident);
+            this.Controls.Add(this.cb_president);
             this.Controls.Add(this.btn_submit);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_councilors);
@@ -223,14 +223,15 @@
             this.Name = "Frm_voteview";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Voting";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Frm_voteview_FormClosed);
             this.Load += new System.EventHandler(this.Frm_voteview_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.votingSystemv2DataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vpBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.votingSystemv2DataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.votingSystemv2DataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.votingSystemv2DataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vpBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.votingSystemv2DataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.votingSystemv2DataSet7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,9 +245,8 @@
         private System.Windows.Forms.Button btn_councilors;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_submit;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ListBox lb_councilor;
+        private System.Windows.Forms.ComboBox cb_president;
+        private System.Windows.Forms.ComboBox cb_vpresident;
         private VotingSystemv2DataSet3TableAdapters.candidateTableAdapter ta_president;
         private VotingSystemv2DataSet4 votingSystemv2DataSet4;
         private System.Windows.Forms.BindingSource vpBindingSource;
@@ -257,5 +257,6 @@
         private VotingSystemv2DataSet7 votingSystemv2DataSet7;
         private System.Windows.Forms.BindingSource cBindingSource;
         private VotingSystemv2DataSet7TableAdapters.candidateTableAdapter candidateTableAdapter2;
+        private System.Windows.Forms.ListBox lb_councilor;
     }
 }

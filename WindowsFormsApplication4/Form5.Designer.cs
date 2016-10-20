@@ -44,7 +44,6 @@
             this.tb_studno.Name = "tb_studno";
             this.tb_studno.Size = new System.Drawing.Size(269, 20);
             this.tb_studno.TabIndex = 2;
-            this.tb_studno.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label3
             // 
@@ -110,7 +109,6 @@
             this.tb_pass.PasswordChar = '*';
             this.tb_pass.Size = new System.Drawing.Size(269, 20);
             this.tb_pass.TabIndex = 13;
-            this.tb_pass.TextChanged += new System.EventHandler(this.tb_pass_TextChanged);
             // 
             // Frm_Register
             // 

@@ -38,7 +38,7 @@
             this.btn_register = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_admin = new System.Windows.Forms.Button();
-           ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tb_user
@@ -47,7 +47,6 @@
             this.tb_user.Name = "tb_user";
             this.tb_user.Size = new System.Drawing.Size(232, 20);
             this.tb_user.TabIndex = 0;
-            this.tb_user.TextChanged += new System.EventHandler(this.tb_user_TextChanged);
             // 
             // tb_pass
             // 
@@ -56,7 +55,6 @@
             this.tb_pass.PasswordChar = '*';
             this.tb_pass.Size = new System.Drawing.Size(232, 20);
             this.tb_pass.TabIndex = 1;
-            this.tb_pass.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // btn_login
             // 
@@ -117,7 +115,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btn_admin
             // 
@@ -130,9 +127,6 @@
             this.btn_admin.UseVisualStyleBackColor = true;
             this.btn_admin.Click += new System.EventHandler(this.button3_Click_1);
             // 
-            // votersTableAdapter1
-            // 
-           // 
             // Frm_Login
             // 
             this.AcceptButton = this.btn_login;

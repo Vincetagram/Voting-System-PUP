@@ -154,6 +154,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>VotingSystemv2DataSet7.xsd</DependentUpon>
     </Compile>
+    <Compile Include="VotingSystemv2DataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VotingSystemv2DataSet8.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -295,6 +300,17 @@
     </None>
     <None Include="VotingSystemv2DataSet7.xss">
       <DependentUpon>VotingSystemv2DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="VotingSystemv2DataSet8.xsc">
+      <DependentUpon>VotingSystemv2DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="VotingSystemv2DataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VotingSystemv2DataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VotingSystemv2DataSet8.xss">
+      <DependentUpon>VotingSystemv2DataSet8.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

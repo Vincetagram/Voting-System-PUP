@@ -21,5 +21,12 @@ namespace WindowsFormsApplication4
         {
             this.Close();
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'votingSystemv2DataSet8.candidate' table. You can move, or remove it, as needed.
+            this.candidateTableAdapter.Fill(this.votingSystemv2DataSet8.candidate);
+
+        }
     }
 }

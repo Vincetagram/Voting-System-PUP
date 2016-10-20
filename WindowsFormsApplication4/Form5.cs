@@ -24,11 +24,6 @@ namespace WindowsFormsApplication4
             this.Close();
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Frm_Register_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(Properties.Settings.Default.VotingSystemv2ConnectionString);
@@ -69,11 +64,6 @@ namespace WindowsFormsApplication4
         }
 
         private void tb_fname_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_pass_TextChanged(object sender, EventArgs e)
         {
 
         }
