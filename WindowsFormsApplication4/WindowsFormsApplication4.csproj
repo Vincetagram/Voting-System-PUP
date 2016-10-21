@@ -12,7 +12,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
+    <PublishUrl>C:\Users\CHEEKI BREEKI\Desktop\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -22,16 +22,19 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <ProductName>PUP Voting System</ProductName>
+    <SuiteName>PVS</SuiteName>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -46,6 +49,18 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9243E5FB008F9415519C1DFA10E468E161D4AAFF</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WindowsFormsApplication4_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -59,6 +74,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cDataset.cs">
+      <DependentUpon>cDataset.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cDataset.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +130,11 @@
     </Compile>
     <Compile Include="Form8.Designer.cs">
       <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pdataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pdataset.xsd</DependentUpon>
     </Compile>
     <Compile Include="presidentbs.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -159,6 +188,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>VotingSystemv2DataSet8.xsd</DependentUpon>
     </Compile>
+    <Compile Include="vpdataset.cs">
+      <DependentUpon>vpdataset.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="vpdataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vpdataset.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +230,28 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="cDataset.xsc">
+      <DependentUpon>cDataset.xsd</DependentUpon>
+    </None>
+    <None Include="cDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cDataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cDataset.xss">
+      <DependentUpon>cDataset.xsd</DependentUpon>
+    </None>
+    <None Include="pdataset.xsc">
+      <DependentUpon>pdataset.xsd</DependentUpon>
+    </None>
+    <None Include="pdataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pdataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pdataset.xss">
+      <DependentUpon>pdataset.xsd</DependentUpon>
+    </None>
     <None Include="presidentbs.xsc">
       <DependentUpon>presidentbs.xsd</DependentUpon>
     </None>
@@ -312,6 +372,18 @@
     <None Include="VotingSystemv2DataSet8.xss">
       <DependentUpon>VotingSystemv2DataSet8.xsd</DependentUpon>
     </None>
+    <None Include="vpdataset.xsc">
+      <DependentUpon>vpdataset.xsd</DependentUpon>
+    </None>
+    <None Include="vpdataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vpdataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vpdataset.xss">
+      <DependentUpon>vpdataset.xsd</DependentUpon>
+    </None>
+    <None Include="WindowsFormsApplication4_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

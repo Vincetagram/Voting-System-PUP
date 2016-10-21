@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="WindowsFormsApplication4.exe" version="1.0.0.2" publicKeyToken="2cb8209c9a64578e" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="WindowsFormsApplication4" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="WindowsFormsApplication4.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WindowsFormsApplication4.exe" size="304128">
+      <assemblyIdentity name="WindowsFormsApplication4" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>YnixBIza+QO4CJlu1f3xy1/6LGMM6OvaePuWECFj1PI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="VotingSystem.mdf" size="3145728" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TJHtUjY+2spbYSsj29l8rJCPUWjXzCSuVMRNiOqjkIQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="VotingSystem_log.ldf" size="786432" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tLk/ttKRO8L9qzQoyA+Pl9S3X+/kFgVFkeWjC5EZmic=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="VotingSystemv2.mdf" size="3211264" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>y1SBS4t9uIXd4VL1w0Umal6m2hx6Fb/9yDBLgtCNr5A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="VotingSystemv2_log.ldf" size="851968" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ixl4N7J9uJR9xNJUNd6XHGxA6gFHbAbNQSLJBf3QD14=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="WindowsFormsApplication4.exe.config" size="589">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2Je9m0mUmiqbghSaSxhDPXDTOqubKerlDd0fXZTQQFY=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=MSI-PC\CHEEKI BREEKI" issuerKeyHash="992f5e00d85964a8a6c134674cd2835675bcb8c3" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Wc1qiv2pv3Akqwc/t+eQYa2XKz1L0XLpsfEu9IknIv4=</DigestValue></Reference></SignedInfo><SignatureValue>MhiiAwAvFL2pIDUthbwkyjFEE3kpLHOov10ali5SLHmV+QWPBqILAqCq3iYdNZC2xRrz1YD35YGyguCYEIEnhQniZWPUnG+Ew85sO84+qcGc0hpds5PiiE/Jgo2sMbXsMQTPITnEi3M3XT20UL2SSigdFMsJmMjORLacBgHYlcU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sbLw/m451iwPchxeSXUliGIJiTz+jT68bWdlfRmgIu24NCg1a6J9loRamp3EkWkp5g+gWMD07e1owL/iBAUm9KsdfwoEv0rYeN2SSDItgCgJEgKaIvXxUh95plyyBuqPPQAM+RxpZiCaOJPSPRrDPJ5BKSvkwD3CqznaGyEr0xk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="fe222789f42ef1b1e972d14b3d2b97ad6190e7b73f07ab2470bfa9fd8a6acd59" Description="" Url=""><as:assemblyIdentity name="WindowsFormsApplication4.exe" version="1.0.0.2" publicKeyToken="2cb8209c9a64578e" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MSI-PC\CHEEKI BREEKI</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>TOTvhg0gJDvs5Y/Fe5Z2C8N7v/bI/fxf7z4bxtf00OU=</DigestValue></Reference></SignedInfo><SignatureValue>K7wMy0IUGAJWVBS2iAwWUBZHQOOBr2iGyjyKlYO+1rwnsOmaqa48gN2r6RmRqtGuhsvVX6gKRDTTNE1bsUVbtV/Khlw7w9Qn+9pKsoTORvA8ga+zrR3vtDKrP52asXgprT7zyVnBVt1vWNruOZfa6RxQjgsThgddhy7aDktXUhY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sbLw/m451iwPchxeSXUliGIJiTz+jT68bWdlfRmgIu24NCg1a6J9loRamp3EkWkp5g+gWMD07e1owL/iBAUm9KsdfwoEv0rYeN2SSDItgCgJEgKaIvXxUh95plyyBuqPPQAM+RxpZiCaOJPSPRrDPJ5BKSvkwD3CqznaGyEr0xk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQLEctjTtcTpZIH3VhFkZ39DANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigATQBTAEkALQBQAEMAXABDAEgARQBFAEsASQAgAEIAUgBFAEUASwBJMB4XDTE2MTAyMTE4MjEwOFoXDTE3MTAyMjAwMjEwOFowMzExMC8GA1UEAx4oAE0AUwBJAC0AUABDAFwAQwBIAEUARQBLAEkAIABCAFIARQBFAEsASTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAsbLw/m451iwPchxeSXUliGIJiTz+jT68bWdlfRmgIu24NCg1a6J9loRamp3EkWkp5g+gWMD07e1owL/iBAUm9KsdfwoEv0rYeN2SSDItgCgJEgKaIvXxUh95plyyBuqPPQAM+RxpZiCaOJPSPRrDPJ5BKSvkwD3CqznaGyEr0xkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQByehokMVVAXOt9obAdV76/zgE2WREYLZv8+gZr0ZuXbz9nD+5Vu4g5CSfzPHK4ZDni3Ms3QchaVX6mBUFDR/fXO3QZ7OABtFp4pbYXMy6JkQGteAETsLUeqznjHfXCjFmfIVxYyz/NRP3d9/j1zOc7+Ewh9y0uDkoX5TR2BjWgrQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

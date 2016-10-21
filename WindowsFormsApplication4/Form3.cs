@@ -19,9 +19,16 @@ namespace WindowsFormsApplication4
 
         private void button1_Click(object sender, EventArgs e)
         {
-         
-            new Frm_adminselect().Show();
-            this.Close();
+            if ((tb_pass.Text == "k9n6pgm2v1") && (tb_user.Text == "ADMIN"))
+            {
+                MessageBox.Show("LOGIN SUCCESSFULLY.");
+                new Frm_adminselect().Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("INVALID USERNAME/PASSWORD.");
+            }
         }
     }
 }

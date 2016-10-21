@@ -126,6 +126,7 @@
             this.Controls.Add(this.btn_confirm);
             this.Controls.Add(this.label3);
             this.Name = "Frm_Register";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Frm_Register_Load);
             this.ResumeLayout(false);

@@ -52,3 +52,7 @@ C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\
 C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
 C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
 C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.manifest
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.application
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe.manifest
+C:\Users\CHEEKI BREEKI\Documents\Voting-System-PUP\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.application

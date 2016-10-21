@@ -40,7 +40,7 @@ namespace WindowsFormsApplication4
             else  
             {
 
-                MessageBox.Show("Invalid Login please check username and password");  
+                MessageBox.Show("Invalid Login please check username and password   ");  
             }  
             con.Close(); 
             
